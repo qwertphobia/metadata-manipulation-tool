@@ -72,7 +72,7 @@ elif flags == [1,0]: # view
 elif flags == [0,1]: # quiet
     # Removal
     removemeta()
-else:
+else: # AI used to enhance my original design here
     # Edit Mode
     import tkinter as tk
     from metagui import Menu
@@ -136,11 +136,8 @@ else:
           
             # Execute only if there are changes
             if changes_made and len(cmd_args) > 1:
-                # debugging print(f"Running ExifTool: {' '.join(cmd_args)}")
                 
                 try:
-                    # Use subprocess directly to capture stderr for debugging
-                    # This bypasses the library's silent failure
                     result = subprocess.run(
                         ['exiftool'] + cmd_args,
                         capture_output=True,
