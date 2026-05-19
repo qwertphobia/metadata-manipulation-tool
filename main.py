@@ -8,12 +8,6 @@ import time
 
 # Initialization
 mimetypes.init([]) # This guarantees interoperability because the Windows Registry's MIME type mappings are different (imcomplete), leading to incomplete results. 
-# These are "raw" files, and are not officially supported. When using these files, you are supposed to not use the "-o (--overwrite)" option.
-'''{"image/x-canon-cr2","image/x-canon-cr3",
-  "image/x-nikon-nef","image/x-sony-arw","image/x-ccl-dng",
-  "image/x-olympus-orf","image/x-pentax-pef","image/x-panasonic-rw2",
-  "image/x-fuji-raf","image/x-minolta-mrw","image/x-sigma-x3f",
-   "image/x-phaseone-iiq","application/octet-stream","image/x-samsung-srw"}'''
 parser = argparse.ArgumentParser(description="Metadata Manipulation Program (mmt). It can show and remove metadata from a file or a directory.")
 parser.add_argument("-f", "--file", required=True, help="filepath to the target file")
 parser.add_argument("-q", "--quiet", action='store_true', help="remove file metadata (without showing)")
@@ -136,18 +130,10 @@ else:
                         continue
                     
                     str_value = str(value)
-                    
-                    # CRITICAL: Escape quotes if present in the value to prevent command injection/syntax errors
-                    # ExifTool expects double quotes around values with spaces, but the library handles this usually.
-                    # However, if the value itself has quotes, we might need to escape them.
-                    # Let's try a simpler approach first: just pass it.
-                    
                     cmd_args.append(f"-{key}={str_value}")
                     changes_made = True
-
-            # Finally, add the file path
             cmd_args.append(str(filepath))
-
+          
             # Execute only if there are changes
             if changes_made and len(cmd_args) > 1:
                 # debugging print(f"Running ExifTool: {' '.join(cmd_args)}")
@@ -179,5 +165,3 @@ else:
                 print("No valid changes to apply.")
     else:
         print("No changes were saved or JSON was invalid.")
-    if root.winfo_exists():
-        root.destroy()
