@@ -26,3 +26,5 @@ Use this program at your own risk. Certain file formats (eg: adobe-dng) might ha
 
 **AI**:
 Some AI is used in the production of this program, especially in the gui menu and the editing of the metadata.
+
+'''./main.py -f <filepath> '''
