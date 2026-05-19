@@ -23,3 +23,6 @@ Help:      <main.py> -q
 
 **Notice**:
 Use this program at your own risk. Certain file formats (eg: adobe-dng) might have proprietary parts that are necessary for rendering. In the scenario you should not use the -o or --overwrite flag. 
+
+**AI**:
+Some AI is used in the production of this program, especially in the gui menu and the editing of the metadata.
