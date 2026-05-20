@@ -25,21 +25,33 @@ Manual Installation at exiftool.org. Please add exiftool to the environmental va
 **Usage**
 
 Default:   <main.py> -f <filepath>
+
 Quiet:     <main.py> -f <filepath> -q
+
 View:      <main.py> -f <filepath> -v 
+
 Edit:      <main.py> -f <filepath> -e 
+
 Overwrite: <main.py> -f <filepath> -o
+
 Help:      <main.py> -q
+
 *Multiple Flags can be used (eg: <main.py> -f sample.jpg -qo).*
 
 **Explanation**
 
 -f or --file to declare the filepath for the file (required)
+
 -q or --quiet to mute output
+
 -v or --view to view metadata (no removal)
+
 -e or --edit to edit metadata
+
 -o or --overwrite to overwrite file if removal takes place
+
 -h or --help to show options
+
 *Some flags are incompatible with each other (eg: quiet is incompatible with edit).*
 
 
@@ -52,4 +64,5 @@ Use this program at your own risk. Certain file formats (eg: adobe-dng) might ha
 Some AI is used in the production of this program, especially in the gui menu and the editing of the metadata.
 
 ```python3 ./main.py -f <filepath>``` for python script or ```./main.py -f <filepath>``` (the shebang/hashbang line only works for linux systems, as only #!/usr/bin/env python3 works there. i implemented that so i can develop easier without doing python3 repetively. this will be fixed.)  
+
 ```./main<ext> -f <filepath>``` for executable file
