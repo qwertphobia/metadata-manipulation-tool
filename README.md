@@ -66,3 +66,7 @@ Some AI is used in the production of this program, especially in the gui menu an
 ```python3 ./main.py -f <filepath>``` for python script or ```./main.py -f <filepath>``` (the shebang/hashbang line only works for linux systems, as only #!/usr/bin/env python3 works there. i implemented that so i can develop easier without doing python3 repetively. this will be fixed.)  
 
 ```./main<ext> -f <filepath>``` for executable file
+
+**Links**
+
+This project is also available on codeberg.org. Codeberg is awesome.
