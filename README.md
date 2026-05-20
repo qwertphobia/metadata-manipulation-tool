@@ -69,4 +69,4 @@ Some AI is used in the production of this program, especially in the gui menu an
 
 **Links**
 
-This project is also available on codeberg.org. Codeberg is awesome.
+This project is also available on https://codeberg.org/randomdude_x8/metadata-manipulation-tool. Codeberg is awesome.
