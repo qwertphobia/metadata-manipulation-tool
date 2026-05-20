@@ -3,14 +3,22 @@ Metadata Manipulation Tool is a CLI tool that allows viewing, editing, and remov
 *Example: If Alex sends a photo to Bob, Bob can find out Alice's location. Alice might not want to leak her location by accident.*
 
 **Warning**:
+
 Both exiftool and pyexiftool needs to be installed for the program to run. Pyexiftool can be installed using ```pip install PyExifTool``` .
-Exiftool can be installed with package managers to 
+Exiftool can be installed with package managers to automatically set PATH.
+
 Linux (apt): ```sudo apt install exiftool```
+
 Linux (dnf): ```sudo dnf install perl-Image-ExifTool```
+
 Linux (pacman): ```sudo pacman -S perl-image-exiftool```
+
 Windows (winget): ```winget install -e --id OliverBetz.ExifTool```
+
 Windows (chocolatey): ```choco install exiftool```
+
 Macos (brew): ```brew install exiftool```
+
 Manual Installation at exiftool.org. Please add exiftool to the environmental variables.
 
 **Usage**:
