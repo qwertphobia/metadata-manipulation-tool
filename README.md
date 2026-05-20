@@ -2,6 +2,10 @@
 Metadata Manipulation Tool is a CLI tool that allows viewing, editing, and removing metadata. Metadata is information embedded in a file, basically data about data. It could contain certain information about you that is potentially sensitive. This tool allows the manipulation (including removal) of these embedded data. A file will be backed up called <filename.ext>_original to prevent file corruption and data loss.
 *Example: If Alex sends a photo to Bob, Bob can find out Alice's location. Alice might not want to leak her location by accident.*
 
+**Warning**:
+Both exiftool and pyexiftool needs to be installed for the program to run. Pyexiftool can be installed using ```pip install PyExifTool``` .
+Exiftool can be installed through exiftool.org. Please add exiftool to path (environmental variables).
+
 **Usage**:
 Default:   <main.py> -f <filepath>
 Quiet:     <main.py> -f <filepath> -q
