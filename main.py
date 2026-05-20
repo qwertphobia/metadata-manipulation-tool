@@ -16,6 +16,16 @@ parser.add_argument("-e", "--edit", action='store_true', help="metadata editing 
 parser.add_argument("-o", "--overwrite", action='store_true', help="overwrites file (without backup) if there is a change in file metadata")
 args = parser.parse_args()  
 
+# Check if exiftool is installed and in system PATH
+try: 
+    with exiftool.ExifToolHelper() as et:
+        pass
+except:
+    print("Exiftool is not installed into path. You may use a package manager to automatically add them to path or manually do so yourself.")
+    print("Do sudo apt (or another package manager) install exiftool on Linux.")
+    print("Do winget install exiftool on Windows.")
+    print("Do brew install exiftool on Macos.")
+    exit()
 # Functions 
 def obtain_mimetype_from_file(filepath):
     p = Path(filepath)
