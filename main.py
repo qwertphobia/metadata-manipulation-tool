@@ -21,11 +21,7 @@ try:
     with exiftool.ExifToolHelper() as et:
         pass
 except:
-    print("Exiftool is not installed into path. You may use a package manager to automatically add them to path or manually do so yourself.")
-    print("Do sudo apt (or another package manager) install exiftool on Linux.")
-    print("Do winget install exiftool on Windows.")
-    print("Do brew install exiftool on Macos.")
-    exit()
+    print("Exiftool is not installed, or not in PATH.\nDetailed instructions in README.")
 # Functions 
 def obtain_mimetype_from_file(filepath):
     p = Path(filepath)
