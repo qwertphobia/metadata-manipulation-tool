@@ -4,7 +4,14 @@ Metadata Manipulation Tool is a CLI tool that allows viewing, editing, and remov
 
 **Warning**:
 Both exiftool and pyexiftool needs to be installed for the program to run. Pyexiftool can be installed using ```pip install PyExifTool``` .
-Exiftool can be installed through exiftool.org. Please add exiftool to path (environmental variables).
+Exiftool can be installed with package managers to 
+Linux (apt): ```sudo apt install exiftool```
+Linux (dnf): ```sudo dnf install perl-Image-ExifTool```
+Linux (pacman): ```sudo pacman -S perl-image-exiftool```
+Windows (winget): ```winget install -e --id OliverBetz.ExifTool```
+Windows (chocolatey): ```choco install exiftool```
+Macos (brew): ```brew install exiftool```
+Manual Installation at exiftool.org. Please add exiftool to the environmental variables.
 
 **Usage**:
 Default:   <main.py> -f <filepath>
