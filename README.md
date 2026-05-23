@@ -20,7 +20,9 @@ Windows (chocolatey): ```choco install exiftool```
 
 Macos (brew): ```brew install exiftool```
 
-Manual Installation at exiftool.org. Please add exiftool to the environmental variables.
+Manual Installation at exiftool.org. 
+[!WARNING]
+Please put the entire folder's contents into the folder where you run the program. Not only the executable
 
 **Usage**
 
