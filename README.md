@@ -60,7 +60,7 @@ Help:      <main.py> -q
 
 **Notice**
 
-Use this program at your own risk. Certain file formats (eg: adobe-dng) might have proprietary parts that are necessary for rendering. In the scenario you should not use the -o or --overwrite flag. 
+Use this program at your own risk. Certain file formats (eg: adobe-dng) might have proprietary parts that are necessary for rendering. In the scenario you should not use the -o or --overwrite flag. Also please use the main.py file, because the windows exe file has a bug in the world map function that is not diagnosed yet (im in school without a windows device that can compile it).
 
 **AI**
 
